@@ -28,11 +28,28 @@
             <version>1.0.19</version>
         </dependency>
         <dependency>
+            <groupId>org.renjin</groupId>
+            <artifactId>renjin-script-engine</artifactId>
+            <version>0.8.1614</version>
+        </dependency>
+        <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
             <version>0.9.10</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>17.0</version> <!-- Because of Renjin -->
+        </dependency>
     </dependencies>
+<repositories>
+  <repository>
+    <id>bedatadriven</id>
+    <name>bedatadriven public repo</name>
+    <url>https://nexus.bedatadriven.com/content/groups/public/</url>
+  </repository>
+</repositories>
 <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
